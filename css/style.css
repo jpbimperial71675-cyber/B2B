@@ -517,7 +517,7 @@ section {
 .diagram__node--results    { top: 84%; left: 22%; width: 27%; }
 
 @media (max-width: 560px) {
-  .diagram__node-sub { display: none; }
+  .diagram__node-sub { font-size: 8.5px; line-height: 1.35; }
   .diagram__node-icon { width: 36px; height: 36px; }
 }
 
@@ -916,7 +916,10 @@ section {
 .governance__col.is-build {
   border: 1px solid var(--accent);
   background: var(--accent-soft);
-  box-shadow: 0 0 30px var(--accent-glow);
+  box-shadow: 0 0 18px var(--accent-glow);
+}
+@media (max-width: 900px) {
+  .governance__col.is-build { box-shadow: none; background: var(--accent-soft); }
 }
 .governance__col.is-build .governance__col-label { color: var(--accent); }
 .governance__col.is-build .governance__col-items li { color: var(--text); }
@@ -1105,8 +1108,8 @@ section {
   height: 44px;
   border-radius: 4px;
   overflow: hidden;
-  border: 1px solid var(--border-strong);
-  background: var(--surface);
+  border: none;
+  background: transparent;
 }
 
 .process-step__icon img {
@@ -1180,8 +1183,8 @@ section {
   margin: 0 auto 26px;
   border-radius: 4px;
   overflow: hidden;
-  border: 1px solid var(--border-strong);
-  background: var(--surface);
+  border: none;
+  background: transparent;
 }
 
 .whyjp__title-image img {
