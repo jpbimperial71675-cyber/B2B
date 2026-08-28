@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>JP Imperial — Strategic Visibility, Operations, AI Governance</title>
+<meta name="description" content="I build systems that turn strategy into execution, visibility, and growth." />
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<div class="site">
+
+  <!-- ============ TOP NAV (Hero only, fades after scroll) ============ -->
+  <header class="top-nav" id="topNav">
+    <span class="top-nav__mark">JP<span>.</span>IMPERIAL</span>
+    <nav class="top-nav__links" aria-label="Primary">
+      <a href="#hero">Overview</a>
+      <a href="#problems">Problems</a>
+      <a href="#case-study">Work</a>
+      <a href="#why-jp">Why JP</a>
+      <a href="#contact">Let's Talk</a>
+    </nav>
+  </header>
+
+  <!-- ============ LEFT PAGE RAIL (persistent 01-08 marker) ============ -->
+  <nav class="page-rail" aria-label="Page sections">
+    <ul class="page-rail__list" id="pageRailList">
+      <li><button class="page-rail__item" data-target="hero"><span class="page-rail__num">01</span><span class="page-rail__dot"></span></button></li>
+      <li><button class="page-rail__item" data-target="problems"><span class="page-rail__num">02</span><span class="page-rail__dot"></span></button></li>
+      <li><button class="page-rail__item" data-target="case-study"><span class="page-rail__num">03</span><span class="page-rail__dot"></span></button></li>
+      <li><button class="page-rail__item" data-target="what-i-owned"><span class="page-rail__num">04</span><span class="page-rail__dot"></span></button></li>
+      <li><button class="page-rail__item" data-target="ai-governance"><span class="page-rail__num">05</span><span class="page-rail__dot"></span></button></li>
+      <li><button class="page-rail__item" data-target="systems-built"><span class="page-rail__num">06</span><span class="page-rail__dot"></span></button></li>
+      <li><button class="page-rail__item" data-target="why-jp"><span class="page-rail__num">07</span><span class="page-rail__dot"></span></button></li>
+      <li><button class="page-rail__item" data-target="contact"><span class="page-rail__num">08</span><span class="page-rail__dot"></span></button></li>
+    </ul>
+  </nav>
+
+  <!-- ============ PAGE 01 — HERO ============ -->
+  <section class="hero" id="hero" data-page="01">
+    <div class="section-inner hero__grid">
+
+      <div class="hero__copy">
+        <p class="eyebrow hero__eyebrow">STRATEGIC VISIBILITY • OPERATIONS • AI GOVERNANCE</p>
+        <h1 class="hero__headline">I build systems that turn strategy into <em>execution, visibility, and growth.</em></h1>
+        <p class="hero__sub">I help organizations replace scattered marketing, disconnected operations, and AI uncertainty with structured systems that improve visibility, execution, and long-term growth.</p>
+
+        <div class="btn-row hero__actions">
+          <a href="#problems" class="btn btn-primary" id="viewWorkBtn">View My Work</a>
+          <a href="mailto:jpbimperial71675@gmail.com" class="btn btn-ghost">Let's Talk</a>
+        </div>
+
+        <div class="hero__scroll-hint">
+          <span class="line"></span>
+          <span>Scroll to continue</span>
+        </div>
+      </div>
+
+      <div class="hero__diagram">
+        <div class="diagram">
+          <svg viewBox="0 0 400 400" aria-hidden="true">
+            <!-- static connectors -->
+            <path class="diagram__connector" d="M200,200 L200,16" />
+            <path class="diagram__connector" d="M200,200 L368,128" />
+            <path class="diagram__connector" d="M200,200 L32,128" />
+            <path class="diagram__connector" d="M200,200 L312,336" />
+            <path class="diagram__connector" d="M200,200 L88,336" />
+            <!-- animated pulses tracing same paths -->
+            <path class="diagram__pulse d1" d="M200,200 L200,16" />
+            <path class="diagram__pulse d2" d="M200,200 L368,128" />
+            <path class="diagram__pulse d3" d="M200,200 L32,128" />
+            <path class="diagram__pulse d4" d="M200,200 L312,336" />
+            <path class="diagram__pulse d5" d="M200,200 L88,336" />
+          </svg>
+
+          <div class="diagram__core">
+            <p class="diagram__core-text">
+              <span class="em">Visibility</span>
+              <span class="em">Authority</span>
+              <span class="em">Growth</span>
+            </p>
+          </div>
+
+          <div class="diagram__node diagram__node--strategy">
+            <div class="diagram__node-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4.2"/><path d="M12 3v3M21 12h-3"/></svg>
+            </div>
+            <p class="diagram__node-title">Strategy</p>
+            <p class="diagram__node-sub">Clarity · Positioning · Direction</p>
+          </div>
+
+          <div class="diagram__node diagram__node--ops">
+            <div class="diagram__node-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.6a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+            </div>
+            <p class="diagram__node-title">Operations</p>
+            <p class="diagram__node-sub">Processes · Systems · Execution</p>
+          </div>
+
+          <div class="diagram__node diagram__node--ai">
+            <div class="diagram__node-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9.5 2a4.5 4.5 0 0 0-4.4 5.5A4 4 0 0 0 3 11a4 4 0 0 0 2 3.46V18a4 4 0 0 0 4 4h.5a1.5 1.5 0 0 0 1.5-1.5v-15A2.5 2.5 0 0 0 9.5 2Z"/><path d="M14.5 2a4.5 4.5 0 0 1 4.4 5.5A4 4 0 0 1 21 11a4 4 0 0 1-2 3.46V18a4 4 0 0 1-4 4h-.5a1.5 1.5 0 0 1-1.5-1.5v-15A2.5 2.5 0 0 1 14.5 2Z"/></svg>
+            </div>
+            <p class="diagram__node-title">AI Governance</p>
+            <p class="diagram__node-sub">Systems · Quality · Risk Control</p>
+          </div>
+
+          <div class="diagram__node diagram__node--content">
+            <div class="diagram__node-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 11l18-7-7 18-2.5-7L3 11Z"/></svg>
+            </div>
+            <p class="diagram__node-title">Content &amp; Distribution</p>
+            <p class="diagram__node-sub">Multi-Platform · Organic Reach</p>
+          </div>
+
+          <div class="diagram__node diagram__node--results">
+            <div class="diagram__node-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 3v18h18"/><path d="M7 15l4-4 3 3 5-6"/></svg>
+            </div>
+            <p class="diagram__node-title">Measurable Results</p>
+            <p class="diagram__node-sub">Visibility · Clients · Growth</p>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============ STUB SECTIONS — built in upcoming segments ============ -->
+  <section id="problems" data-page="02">
+    <div class="section-inner">
+
+      <div class="problems__intro">
+        <span class="section-label">02 — Problems I Solve</span>
+        <h2 class="problems__statement">You think that's the problem. <em>Think again.</em></h2>
+      </div>
+
+      <div class="problem-grid">
+
+        <article class="problem-card">
+          <span class="problem-card__icon">
+            <img src="assets/images/problem-01-placeholder.png" alt="Marketing activity without business connection" />
+          </span>
+          <span class="problem-card__bar"></span>
+          <h3 class="problem-card__title">Marketing Activity Without Business Connection</h3>
+          <p class="problem-card__question">You post consistently. But if you stopped tomorrow, what would actually change?</p>
+        </article>
+
+        <article class="problem-card">
+          <span class="problem-card__icon">
+            <img src="assets/images/problem-02-placeholder.png" alt="AI without operational control" />
+          </span>
+          <span class="problem-card__bar"></span>
+          <h3 class="problem-card__title">AI Without Operational Control</h3>
+          <p class="problem-card__question">You upgraded the tools. But did you actually buy back time, or just create another thing your team has to manage?</p>
+        </article>
+
+        <article class="problem-card">
+          <span class="problem-card__icon">
+            <img src="assets/images/problem-03-placeholder.png" alt="Execution trapped inside people" />
+          </span>
+          <span class="problem-card__bar"></span>
+          <h3 class="problem-card__title">Execution Trapped Inside People</h3>
+          <p class="problem-card__question">What happens when the person who knows how everything works isn't available anymore?</p>
+        </article>
+
+      </div>
+
+    </div>
+  </section>
+
+  <section id="case-study" data-page="03">
+    <div class="section-inner">
+
+      <span class="section-label case-study__label">03 — Case Study</span>
+      <h2 class="case-study__title">Case Study</h2>
+
+      <div class="case-study__banner">
+        <img src="assets/images/case-study-banner-placeholder.png" alt="Alpine Legacy — Colorado mountain background with logo" />
+      </div>
+
+      <div class="case-study__narrative">
+        <div class="case-study__block">
+          <span class="section-label case-study__subhead">The Problem</span>
+          <p>Scattered digital activity. Marketing, visibility, and execution were operating as separate efforts instead of one connected growth system.</p>
+        </div>
+        <div class="case-study__block">
+          <span class="section-label case-study__subhead">What I Did</span>
+          <p>Connected strategy, content, distribution, visibility, and execution into one structured operating approach.</p>
+        </div>
+      </div>
+
+      <span class="section-label case-study__subhead" style="margin-bottom:20px; display:block;">The Result</span>
+
+      <div class="case-study__result">
+        <div>
+          <p class="case-study__stat-main">512 → <span>5,595</span></p>
+          <p class="case-study__stat-caption">LinkedIn Followers</p>
+        </div>
+        <div>
+          <p class="case-study__stat-multiplier">10.9x</p>
+          <p class="case-study__stat-caption">Follower Growth</p>
+        </div>
+      </div>
+
+      <p class="case-study__evidence"><strong>Additional evidence available upon request.</strong><br />Google Business Profile performance data is available.</p>
+
+    </div>
+  </section>
+
+  <section id="what-i-owned" data-page="04">
+    <div class="section-inner">
+
+      <div class="owned__intro">
+        <span class="section-label">04 — What I Owned</span>
+        <h2 class="owned__headline">Posting content isn't the hard part. <em>Making the pieces work together is.</em></h2>
+      </div>
+
+      <div class="ownership-flows">
+
+        <div class="ownership-flow">
+          <div class="ownership-flow__graphic">
+            <img src="assets/images/ownership-flow-01-placeholder.png" alt="Strategy to Content to Visibility flow" />
+          </div>
+          <p class="ownership-flow__narrative">A positioning decision shouldn't disappear once the content calendar begins.</p>
+        </div>
+
+        <div class="ownership-flow">
+          <div class="ownership-flow__graphic">
+            <img src="assets/images/ownership-flow-02-placeholder.png" alt="Content to Search to Trust flow" />
+          </div>
+          <p class="ownership-flow__narrative">Being visible isn't enough. People need a reason to believe you.</p>
+        </div>
+
+        <div class="ownership-flow">
+          <div class="ownership-flow__graphic">
+            <img src="assets/images/ownership-flow-03-placeholder.png" alt="Knowledge to Systems to Execution flow" />
+          </div>
+          <p class="ownership-flow__narrative">If execution depends on one person's memory, the business doesn't own the process.</p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <section id="ai-governance" data-page="05">
+    <div class="section-inner">
+
+      <div class="governance__intro">
+        <span class="section-label">05 — AI Governance</span>
+        <h2 class="governance__headline">Your AI can be impressive and <em>STILL BE WRONG.</em></h2>
+        <p class="governance__sub">I build the rules, documentation, and quality controls that make AI-assisted work consistent enough to use inside a real business.</p>
+      </div>
+
+      <div class="governance__row">
+
+        <div class="governance__col is-before">
+          <span class="governance__col-label">Without Governance</span>
+          <div class="governance__col-image">
+            <img src="assets/images/without-governance-placeholder.png" alt="Without governance" />
+          </div>
+        </div>
+
+        <div class="governance__connector">→</div>
+
+        <div class="governance__col is-build">
+          <span class="governance__col-label">What I Build</span>
+          <div class="governance__col-image">
+            <img src="assets/images/what-i-build-placeholder.png" alt="What I build" />
+          </div>
+        </div>
+
+        <div class="governance__connector">→</div>
+
+        <div class="governance__col is-after">
+          <span class="governance__col-label">With Governance</span>
+          <div class="governance__col-image">
+            <img src="assets/images/with-governance-placeholder.png" alt="With governance" />
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <section id="systems-built" data-page="06">
+    <div class="section-inner">
+
+      <div class="systems__intro">
+        <span class="section-label">06 — Systems I Built</span>
+      </div>
+
+      <div class="systems-grid">
+
+        <a class="system-card" href="https://jpbimperial71675-cyber.github.io/jpimperial/ghost-town-audit" target="_blank" rel="noopener">
+          <span class="system-card__eyebrow">System 01</span>
+          <h3 class="system-card__title">Ghost Town Audit</h3>
+          <div class="system-card__image">
+            <img src="assets/images/systems-ghost-town-placeholder.png" alt="Ghost Town Audit" />
+          </div>
+          <p class="system-card__tagline">Find What The Market Can't See</p>
+          <p class="system-card__desc">A diagnostic framework for identifying overlooked visibility gaps, dormant assets, and missed growth opportunities.</p>
+        </a>
+
+        <a class="system-card" href="https://jpbimperial71675-cyber.github.io/jpimperial/" target="_blank" rel="noopener">
+          <span class="system-card__eyebrow">System 02</span>
+          <h3 class="system-card__title">Authority OS</h3>
+          <div class="system-card__image">
+            <img src="assets/images/systems-authority-os-placeholder.png" alt="Authority OS" />
+          </div>
+          <p class="system-card__tagline">Connect The Pieces That Create Authority</p>
+          <p class="system-card__desc">A structured system connecting strategy, content, search, AI, and operations into a repeatable growth engine.</p>
+        </a>
+
+      </div>
+
+    </div>
+  </section>
+
+  <section id="why-jp" data-page="07">
+    <div class="section-inner">
+
+      <div class="method__intro">
+        <span class="section-label">07 — Why JP</span>
+        <h2 class="method__headline">Strategy that never gets implemented is just <em>expensive advice.</em></h2>
+      </div>
+
+      <div class="whyjp__block">
+        <span class="whyjp__block-label is-dim" style="margin-bottom: 22px; display: block;">The Typical Role</span>
+        <div class="whyjp__title-image is-md">
+          <img src="assets/images/whyjp-typical-role-placeholder.png" alt="The Typical Role" />
+        </div>
+      </div>
+
+      <div class="whyjp__vs">
+        <div class="whyjp__title-image is-sm" style="margin-inline:auto;">
+          <img src="assets/images/whyjp-vs-placeholder.png" alt="Versus" />
+        </div>
+      </div>
+
+      <div class="whyjp__block">
+        <span class="whyjp__block-label is-accent">How I Operate</span>
+      </div>
+
+      <div class="process-row">
+
+        <div class="process-step">
+          <div class="process-step__marker">
+            <span class="process-step__icon"><img src="assets/images/process-icon-01-placeholder.png" alt="" /></span>
+            <span class="process-step__num">01</span>
+          </div>
+          <div>
+            <p class="process-step__title">Find</p>
+            <p class="process-step__desc">Understand the real problem.</p>
+          </div>
+        </div>
+
+        <div class="process-step">
+          <div class="process-step__marker">
+            <span class="process-step__icon"><img src="assets/images/process-icon-02-placeholder.png" alt="" /></span>
+            <span class="process-step__num">02</span>
+          </div>
+          <div>
+            <p class="process-step__title">Connect</p>
+            <p class="process-step__desc">Find what the problem is connected to.</p>
+          </div>
+        </div>
+
+        <div class="process-step">
+          <div class="process-step__marker">
+            <span class="process-step__icon"><img src="assets/images/process-icon-03-placeholder.png" alt="" /></span>
+            <span class="process-step__num">03</span>
+          </div>
+          <div>
+            <p class="process-step__title">Build</p>
+            <p class="process-step__desc">Create the system and implement it.</p>
+          </div>
+        </div>
+
+        <div class="process-step">
+          <div class="process-step__marker">
+            <span class="process-step__icon"><img src="assets/images/process-icon-04-placeholder.png" alt="" /></span>
+            <span class="process-step__num">04</span>
+          </div>
+          <div>
+            <p class="process-step__title">Execute</p>
+            <p class="process-step__desc">Put the system into action.</p>
+          </div>
+        </div>
+
+        <div class="process-step">
+          <div class="process-step__marker">
+            <span class="process-step__icon"><img src="assets/images/process-icon-05-placeholder.png" alt="" /></span>
+            <span class="process-step__num">05</span>
+          </div>
+          <div>
+            <p class="process-step__title">Measure</p>
+            <p class="process-step__desc">Measure what changed and what matters.</p>
+          </div>
+        </div>
+
+        <div class="process-step">
+          <div class="process-step__marker">
+            <span class="process-step__icon"><img src="assets/images/process-icon-06-placeholder.png" alt="" /></span>
+            <span class="process-step__num">06</span>
+          </div>
+          <div>
+            <p class="process-step__title">Document</p>
+            <p class="process-step__desc">Make knowledge usable beyond one person.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <p class="whyjp__answer" style="margin-top: clamp(56px, 8vw, 88px);">I don't wait for a title to tell me what's mine to fix.</p>
+
+      <p class="whyjp__statement">I don't need every problem to arrive with a <em>JOB TITLE</em> attached to it.</p>
+
+    </div>
+  </section>
+
+  <section id="contact" data-page="08">
+    <div class="section-inner">
+
+      <div class="contact-grid">
+
+        <div class="contact-col1">
+          <span class="section-label">08 — Contact</span>
+          <h2 class="contact-col1__headline">Have a problem that doesn't fit neatly into one role?</h2>
+          <p class="contact-col1__sub">Let's talk about it.</p>
+        </div>
+
+        <div class="contact-col2">
+          <div class="contact-col2__headshot">
+            <video autoplay loop muted playsinline>
+              <source src="assets/images/contact-headshot-placeholder.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <p class="contact-col2__name">JP Imperial</p>
+          <p class="contact-col2__tagline">Strategic Visibility • Operations • AI Governance</p>
+
+          <div class="contact-col2__list">
+            <a href="mailto:jpbimperial71675@gmail.com">
+              <span class="contact-col2__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="1.5"/><path d="M3 7l9 6 9-6"/></svg></span>
+              jpbimperial71675@gmail.com
+            </a>
+            <a href="tel:+639178405877">
+              <span class="contact-col2__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.9.32 1.78.6 2.63a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.45-1.17a2 2 0 0 1 2.11-.45c.85.28 1.73.48 2.63.6A2 2 0 0 1 22 16.92z"/></svg></span>
+              +63 917 840 5877
+            </a>
+            <a href="https://linkedin.com/in/jpimperial" target="_blank" rel="noopener">
+              <span class="contact-col2__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2.5"/><path d="M7.5 10v6.5M7.5 7.2v.1M11.5 16.5V10M11.5 12.7c0-1.5 1-2.7 2.5-2.7s2.5 1.2 2.5 2.7v3.8"/></svg></span>
+              linkedin.com/in/jpimperial
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-col3">
+          <div class="contact-col3__graphic">
+            <img src="assets/images/contact-cta-graphic-placeholder.png" alt="" />
+            <a href="mailto:jpbimperial71675@gmail.com" class="btn btn-primary contact-col3__cta">Start a Conversation</a>
+          </div>
+        </div>
+
+      </div>
+
+      <footer class="site-footer">
+        <div class="site-footer__brand">
+          JP Imperial
+          <span>Strategic Visibility • Operations • AI Governance</span>
+        </div>
+        <p class="site-footer__copyright">© 2026 JP Imperial. All rights reserved.</p>
+        <div class="site-footer__social">
+          <a href="https://linkedin.com/in/jpimperial" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2.5"/><path d="M7.5 10v6.5M7.5 7.2v.1M11.5 16.5V10M11.5 12.7c0-1.5 1-2.7 2.5-2.7s2.5 1.2 2.5 2.7v3.8"/></svg>
+          </a>
+          <a href="mailto:jpbimperial71675@gmail.com" aria-label="Email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="1.5"/><path d="M3 7l9 6 9-6"/></svg>
+          </a>
+        </div>
+      </footer>
+
+    </div>
+  </section>
+
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
