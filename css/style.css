@@ -565,13 +565,18 @@ section {
 }
 
 .problem-card__icon {
-  width: 72px;
-  height: 72px;
-  margin-bottom: 26px;
+  display: block;
+  width: 96px;
+  height: 96px;
+  margin: 0 auto 26px;
   border-radius: 4px;
   overflow: hidden;
   border: 1px solid var(--border-strong);
   background: var(--surface);
+}
+
+@media (max-width: 900px) {
+  .problem-card__icon { width: 112px; height: 112px; }
 }
 
 .problem-card__icon img {
@@ -723,6 +728,34 @@ section {
 .case-study__evidence strong {
   color: var(--text-muted);
   font-weight: 500;
+}
+
+.case-study__proof {
+  margin-bottom: clamp(48px, 6vw, 80px);
+}
+
+.case-study__proof-text {
+  font-size: 16px;
+  line-height: 1.75;
+  color: var(--text-muted);
+  max-width: 72ch;
+  margin-bottom: 28px;
+}
+
+.case-study__proof-image {
+  width: 100%;
+  aspect-ratio: 2.3 / 1;
+  border-radius: 4px;
+  overflow: hidden;
+  border: 1px solid var(--border-strong);
+  background: var(--surface);
+}
+
+.case-study__proof-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 /* ---- WHAT I OWNED (Page 04) ---------------------------------------------- */
