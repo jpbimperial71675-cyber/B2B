@@ -597,11 +597,24 @@ section {
   margin-bottom: 18px;
 }
 
+.problem-card__prompt {
+  font-size: 15px;
+  line-height: 1.75;
+  color: var(--text);
+  font-weight: 500;
+  margin-top: auto;
+}
+
+.problem-card__prompt em {
+  font-style: normal;
+  color: var(--accent);
+}
+
 .problem-card__question {
   font-size: 15px;
   line-height: 1.75;
   color: var(--text-muted);
-  margin-top: auto;
+  margin-top: 14px;
 }
 
 .problem-card__bar {
