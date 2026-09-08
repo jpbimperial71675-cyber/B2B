@@ -816,7 +816,7 @@ section {
 /* ---- WHAT I OWNED (Page 04) ---------------------------------------------- */
 .owned__intro {
   max-width: 780px;
-  margin-bottom: clamp(56px, 8vw, 100px);
+  margin-bottom: 0;
 }
 
 .owned__intro .section-label { margin-bottom: 20px; display: block; }
@@ -834,6 +834,7 @@ section {
 
 .owned__intro-sub {
   margin-top: 22px;
+  margin-bottom: clamp(56px, 8vw, 100px);
   font-size: 16.5px;
   line-height: 1.75;
   color: var(--text-muted);
@@ -930,7 +931,7 @@ section {
 /* ---- AI GOVERNANCE (Page 05) --------------------------------------------- */
 .governance__intro {
   max-width: 780px;
-  margin-bottom: clamp(24px, 4vw, 32px);
+  margin-bottom: 0;
 }
 
 .governance__intro .section-label { margin-bottom: 20px; display: block; }
@@ -948,6 +949,7 @@ section {
 
 .governance__sub {
   margin-top: 22px;
+  margin-bottom: clamp(24px, 4vw, 32px);
   font-size: 17px;
   line-height: 1.75;
   color: var(--text-muted);
@@ -1025,14 +1027,6 @@ section {
   height: 1px;
 }
 
-.governance__col-subtitle {
-  margin-top: 22px;
-  font-family: var(--font-mono);
-  font-size: 11px;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-}
-
 .governance__col.is-before {
   border: 1px dashed var(--border-strong);
   background: transparent;
@@ -1040,7 +1034,6 @@ section {
 .governance__col.is-before .governance__col-label { color: var(--text-dim); }
 .governance__col.is-before .governance__col-items li { color: var(--text-dim); }
 .governance__col.is-before .governance__col-items li::before { background: var(--text-dim); }
-.governance__col.is-before .governance__col-subtitle { color: var(--text-dim); }
 
 .governance__col.is-build {
   border: 1px solid var(--accent);
@@ -1053,7 +1046,6 @@ section {
 .governance__col.is-build .governance__col-label { color: var(--accent); }
 .governance__col.is-build .governance__col-items li { color: var(--text); }
 .governance__col.is-build .governance__col-items li::before { background: var(--accent); }
-.governance__col.is-build .governance__col-subtitle { color: var(--accent); }
 
 .governance__col.is-after {
   border: 1px solid var(--border-strong);
@@ -1062,10 +1054,18 @@ section {
 .governance__col.is-after .governance__col-label { color: var(--text); }
 .governance__col.is-after .governance__col-items li { color: var(--text-muted); }
 .governance__col.is-after .governance__col-items li::before { background: var(--text); }
-.governance__col.is-after .governance__col-subtitle { color: var(--text-muted); }
+
+.governance__separator {
+  margin-top: clamp(56px, 8vw, 88px);
+  margin-bottom: 0;
+  font-size: clamp(26px, 3.4vw, 40px);
+  color: var(--text);
+  line-height: 1.3;
+  text-align: center;
+}
 
 .governance__proof-grid {
-  margin-top: clamp(48px, 6vw, 72px);
+  margin-top: clamp(32px, 4.5vw, 48px);
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: clamp(24px, 3vw, 36px);
