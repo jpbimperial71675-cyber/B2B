@@ -222,7 +222,7 @@ section {
   align-items: center;
   gap: 6px;
   cursor: pointer;
-  padding: 4px;
+  padding: 10px 8px;
   background: none;
   border: none;
   color: var(--text-dim);
@@ -259,21 +259,30 @@ section {
     left: 0;
     right: 0;
     width: 100%;
-    height: 44px;
+    height: 52px;
     border-right: none;
     border-top: 1px solid var(--border);
     background: var(--bg-elevated);
   }
   .page-rail__list {
     flex-direction: row;
-    gap: 14px;
+    width: 100%;
+    gap: 2px;
+    padding-inline: 6px;
   }
-  .page-rail__item { flex-direction: row; gap: 6px; }
-  .page-rail__num { display: none; }
-  .page-rail__item.is-active .page-rail__num {
+  .page-rail__item {
+    flex: 1;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    padding: 16px 4px;
+  }
+  .page-rail__num {
     display: inline;
-    font-size: 10px;
+    font-size: 11px;
   }
+  .page-rail__dot { display: none; }
 }
 
 /* ---- Buttons ------------------------------------------------------------ */
@@ -828,7 +837,17 @@ section {
   font-size: 16.5px;
   line-height: 1.75;
   color: var(--text-muted);
-  max-width: 62ch;
+  max-width: 100%;
+}
+
+.owned__intro-sub em {
+  font-style: normal;
+  color: var(--accent);
+}
+
+.owned__intro-sub .owned-caps {
+  text-transform: uppercase;
+  color: var(--text);
 }
 
 .ownership-flow {
