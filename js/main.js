@@ -32,6 +32,9 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // ---- Page rail: highlight active section on scroll ----
+  // Uses a center-line trick (rootMargin shrinks the viewport to a single
+  // horizontal line at 50% height) so detection works regardless of how
+  // tall or short any individual section is.
   const railMap = new Map();
   railItems.forEach((item) => railMap.set(item.dataset.target, item));
 
@@ -46,7 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       });
     },
-    { threshold: 0.5 }
+    { root: null, rootMargin: '-50% 0px -50% 0px', threshold: 0 }
   );
 
   sections.forEach((s) => sectionObserver.observe(s));
