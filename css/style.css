@@ -1227,7 +1227,7 @@ section {
 }
 
 /* ---- HOW I WORK (Page 07) ------------------------------------------------- */
-.method__intro { max-width: 780px; margin-bottom: clamp(56px, 8vw, 96px); }
+.method__intro { max-width: 780px; margin-bottom: 0; }
 .method__intro .section-label { margin-bottom: 20px; display: block; }
 
 .method__headline {
