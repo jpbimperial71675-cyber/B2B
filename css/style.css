@@ -1631,6 +1631,7 @@ section {
   height: 100%;
   object-fit: cover;
   display: block;
+  object-position: center top;
 }
 
 .contact-col2__name {
