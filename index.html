@@ -11,7 +11,7 @@
 </head>
 <body class="bg-slate-50 text-slate-900 antialiased selection:bg-amber-100 selection:text-amber-900 pb-20 lg:pb-0">
 
-  <!-- Floating Navigation Rail -->
+  <!-- Floating Navigation Rail (Responsive: Vertical Dock on Desktop, Bottom Bar on Mobile) -->
   <nav class="fixed z-50 transition-all duration-300
               bottom-3 left-1/2 -translate-x-1/2 flex flex-row gap-1.5 p-2 rounded-full bg-white/95 border border-slate-300 shadow-xl backdrop-blur-md
               lg:bottom-auto lg:left-auto lg:translate-x-0 lg:right-6 lg:top-1/2 lg:-translate-y-1/2 lg:flex-col lg:gap-2.5 lg:p-2.5">
@@ -85,19 +85,24 @@
         </div>
       </div>
 
-      <!-- Smartphone Video Frame Container -->
+      <!-- Smartphone Video Frame Container (Local MP4 Hosting) -->
       <div class="lg:col-span-5 flex flex-col items-center">
         <span class="text-xs sm:text-sm font-mono text-slate-600 mb-2 font-bold uppercase tracking-wider">60-Sec Executive Brief</span>
         <div class="relative w-full max-w-[290px] aspect-[9/16] rounded-[2.5rem] p-3 bg-slate-900 border-4 border-slate-800 shadow-2xl shadow-slate-900/15">
-          <div class="w-full h-full rounded-[2rem] overflow-hidden bg-black flex items-center justify-center">
-            <iframe 
-              class="w-full h-full object-cover" 
-              src="[suspicious link removed]" 
-              title="60-Second Executive Brief" 
-              frameborder="0" 
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-              allowfullscreen>
-            </iframe>
+          <div class="w-full h-full rounded-[2rem] overflow-hidden bg-black flex items-center justify-center relative">
+            <video 
+              class="w-full h-full object-cover rounded-[2rem]" 
+              playsinline 
+              controls 
+              preload="auto">
+              <!-- Primary paths covering your exact uploaded path and variants -->
+              <source src="Assest/Images/jp-executive-brief.mp4" type="video/mp4">
+              <source src="assets/images/jp-executive-brief.mp4" type="video/mp4">
+              <source src="Assest/Images/video.mp4" type="video/mp4">
+              <source src="assets/images/video.mp4" type="video/mp4">
+              <source src="assets/jp-executive-brief.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
           </div>
         </div>
       </div>
