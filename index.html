@@ -1,338 +1,369 @@
 <!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JP Imperial | B2B Growth Operations & AI Governance</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Feather Icons CDN -->
+  <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body class="bg-slate-50 text-slate-900 antialiased selection:bg-amber-100 selection:text-amber-900 pb-20 lg:pb-0">
 
-<nav>
-    <a href="#brief" title="01 - Executive Brief">01</a>
-    <a href="#matrix" title="02 - Recruiter Fit">02</a>
-    <a href="#diagnostic" title="03 - Problems Solved">03</a>
-    <a href="#playbooks" title="04 - Playbooks">04</a>
-    <a href="#governance" title="05 - AI Governance">05</a>
-    <a href="#proof" title="06 - Case Study">06</a>
-    <a href="#experience" title="07 - Experience">07</a>
-    <a href="#contact" title="08 - Next Steps">08</a>
+  <!-- Floating Navigation Rail -->
+  <nav class="fixed z-50 transition-all duration-300
+              bottom-3 left-1/2 -translate-x-1/2 flex flex-row gap-1.5 p-2 rounded-full bg-white/95 border border-slate-300 shadow-xl backdrop-blur-md
+              lg:bottom-auto lg:left-auto lg:translate-x-0 lg:right-6 lg:top-1/2 lg:-translate-y-1/2 lg:flex-col lg:gap-2.5 lg:p-2.5">
+    <a href="#brief" class="w-8 h-8 flex items-center justify-center rounded-full text-xs font-mono font-bold text-slate-600 hover:text-amber-700 hover:bg-amber-50 border border-transparent hover:border-amber-200 transition-all" title="01 - Executive Brief">01</a>
+    <a href="#matrix" class="w-8 h-8 flex items-center justify-center rounded-full text-xs font-mono font-bold text-slate-600 hover:text-amber-700 hover:bg-amber-50 border border-transparent hover:border-amber-200 transition-all" title="02 - Recruiter Fit">02</a>
+    <a href="#diagnostic" class="w-8 h-8 flex items-center justify-center rounded-full text-xs font-mono font-bold text-slate-600 hover:text-amber-700 hover:bg-amber-50 border border-transparent hover:border-amber-200 transition-all" title="03 - Problems Solved">03</a>
+    <a href="#playbooks" class="w-8 h-8 flex items-center justify-center rounded-full text-xs font-mono font-bold text-slate-600 hover:text-amber-700 hover:bg-amber-50 border border-transparent hover:border-amber-200 transition-all" title="04 - Playbooks">04</a>
+    <a href="#governance" class="w-8 h-8 flex items-center justify-center rounded-full text-xs font-mono font-bold text-slate-600 hover:text-amber-700 hover:bg-amber-50 border border-transparent hover:border-amber-200 transition-all" title="05 - AI Governance">05</a>
+    <a href="#proof" class="w-8 h-8 flex items-center justify-center rounded-full text-xs font-mono font-bold text-slate-600 hover:text-amber-700 hover:bg-amber-50 border border-transparent hover:border-amber-200 transition-all" title="06 - Case Study">06</a>
+    <a href="#experience" class="w-8 h-8 flex items-center justify-center rounded-full text-xs font-mono font-bold text-slate-600 hover:text-amber-700 hover:bg-amber-50 border border-transparent hover:border-amber-200 transition-all" title="07 - Experience">07</a>
+    <a href="#contact" class="w-8 h-8 flex items-center justify-center rounded-full text-xs font-mono font-bold text-slate-600 hover:text-amber-700 hover:bg-amber-50 border border-transparent hover:border-amber-200 transition-all" title="08 - Next Steps">08</a>
   </nav>
 
-  
-  <header>
-    <div>
-      <div>
-        <a href="#brief">JP IMPERIAL</a>
-        <span>
-          <span></span>
-          Available for Embedded &amp; Full-Time Deployment
+  <!-- Sticky Header -->
+  <header class="sticky top-0 z-40 bg-white/90 backdrop-blur-md border-b border-slate-200">
+    <div class="max-w-6xl mx-auto px-5 sm:px-6 h-16 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <a href="#brief" class="font-extrabold tracking-tight text-slate-900 text-lg">JP IMPERIAL</a>
+        <span class="hidden sm:inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-medium bg-emerald-50 text-emerald-800 border border-emerald-200">
+          <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
+          Available for Embedded & Full-Time Deployment
         </span>
       </div>
-      <div>
-        <a href="https://calendly.com/joseph-paul-imperial/30min" target="_blank" rel="noopener noreferrer">
-          <i></i>
+      <div class="flex items-center gap-3">
+        <a href="https://calendly.com/joseph-paul-imperial/30min" target="_blank" rel="noopener noreferrer" 
+           class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg bg-amber-700 hover:bg-amber-800 text-white text-xs sm:text-sm font-semibold tracking-wide transition-all shadow-sm">
+          <i data-feather="calendar" class="w-3.5 h-3.5"></i>
           Schedule 30-Min Call
         </a>
       </div>
     </div>
   </header>
 
-  <main>
+  <main class="max-w-6xl mx-auto px-5 sm:px-6 py-10 space-y-20 sm:space-y-24">
 
-    
-    <section>
-      <div>
-        <span>
+    <!-- Section 01: Hero & 60-Sec Executive Brief -->
+    <section id="brief" class="pt-4 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+      <div class="lg:col-span-7 space-y-5">
+        <span class="text-xs sm:text-sm font-mono font-bold tracking-widest text-amber-800 uppercase">
           B2B Growth Operations · Content Infrastructure · AI Governance
         </span>
-        <h1>
-          Replacing Scattered Marketing with Scalable Distribution &amp; Governed AI Execution.
+        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight text-slate-900 leading-tight">
+          Replacing Scattered Marketing with Scalable Distribution & Governed AI Execution.
         </h1>
-        <p>
+        <p class="text-base sm:text-lg text-slate-700 leading-relaxed">
           I bridge the gap between creative content, search discoverability, and sales pipeline velocity. I don't give theoretical advice; I build documented, repeatable systems that your organization permanently owns.
         </p>
 
-        
-        <div>
+        <!-- Callout Banner -->
+        <div class="p-4 sm:p-5 rounded-xl bg-amber-50/80 border-l-4 border-amber-600 text-amber-950 font-semibold text-base sm:text-lg shadow-sm">
           "Strategy that never gets implemented is just expensive advice."
         </div>
 
-        
-        <div>
-          <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=jpbimperial71675@gmail.com" target="_blank" rel="noopener noreferrer">
-            <i></i>
+        <!-- Action CTAs -->
+        <div class="flex flex-wrap items-center gap-3 pt-2">
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=jpbimperial71675@gmail.com" target="_blank" rel="noopener noreferrer"
+             class="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-slate-900 hover:bg-slate-800 text-white text-sm font-semibold transition-all shadow-sm">
+            <i data-feather="mail" class="w-4 h-4"></i>
             Open in Gmail
           </a>
-          
-          <a href="about:invalid#zClosurez">
-            <i></i>
+          <button onclick="navigator.clipboard.writeText('jpbimperial71675@gmail.com'); this.innerText = 'Copied to Clipboard!';"
+                  class="inline-flex items-center gap-2 px-4 py-2.5 rounded-lg bg-white border border-slate-300 hover:bg-slate-100 text-slate-800 text-sm font-medium transition-all shadow-sm">
+            <i data-feather="copy" class="w-4 h-4"></i>
+            Copy Email
+          </button>
+          <a href="tel:+639178405877"
+             class="inline-flex items-center gap-2 px-4 py-2.5 rounded-lg bg-white border border-slate-300 hover:bg-slate-100 text-slate-800 text-sm font-medium transition-all shadow-sm">
+            <i data-feather="phone" class="w-4 h-4"></i>
             +63 917 840 5877
           </a>
         </div>
       </div>
 
-      
-      <div>
-        <span>60-Sec Executive Brief</span>
-        <div>
-          <div>
-            
+      <!-- Smartphone Video Frame Container -->
+      <div class="lg:col-span-5 flex flex-col items-center">
+        <span class="text-xs sm:text-sm font-mono text-slate-600 mb-2 font-bold uppercase tracking-wider">60-Sec Executive Brief</span>
+        <div class="relative w-full max-w-[290px] aspect-[9/16] rounded-[2.5rem] p-3 bg-slate-900 border-4 border-slate-800 shadow-2xl shadow-slate-900/15">
+          <div class="w-full h-full rounded-[2rem] overflow-hidden bg-black flex items-center justify-center">
+            <iframe 
+              class="w-full h-full object-cover" 
+              src="[suspicious link removed]" 
+              title="60-Second Executive Brief" 
+              frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              allowfullscreen>
+            </iframe>
           </div>
         </div>
       </div>
     </section>
 
-    
-    <section>
-      <div>
+    <!-- Section 02: Recruiter De-Risking Matrix -->
+    <section id="matrix" class="p-6 sm:p-8 rounded-2xl bg-white border border-slate-200 shadow-sm space-y-6">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-slate-100 pb-4">
         <div>
-          <h2>Executive Fit &amp; Placement Summary</h2>
-          <p>De-risking the hire: alignment, pace, and collaboration standards</p>
+          <h2 class="text-xl font-bold text-slate-900">Executive Fit & Placement Summary</h2>
+          <p class="text-sm text-slate-600">De-risking the hire: alignment, pace, and collaboration standards</p>
         </div>
-        <div>
-          <span>
+        <div class="self-start sm:self-auto">
+          <span class="inline-block px-3 py-1 rounded-full text-xs font-mono font-bold bg-amber-50 text-amber-900 border border-amber-300 whitespace-nowrap">
             Zero Onboarding Drag
           </span>
         </div>
       </div>
-      <div>
-        <div>
-          <span>Target Roles</span>
-          <p>Growth Operations Lead · Content Infrastructure Lead · Marketing Operations Director</p>
-          <p>Built for cross-functional alignment across marketing, sales, and executive leadership.</p>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="space-y-2">
+          <span class="text-xs font-mono uppercase tracking-wider text-slate-500 font-bold">Target Roles</span>
+          <p class="text-base font-bold text-slate-900">Growth Operations Lead · Content Infrastructure Lead · Marketing Operations Director</p>
+          <p class="text-sm text-slate-600 leading-relaxed">Built for cross-functional alignment across marketing, sales, and executive leadership.</p>
         </div>
-        <div>
-          <span>Work Style &amp; Collaboration</span>
-          <p>Embedded, Hands-On Operator (Zero Flight Risk)</p>
-          <p>First 30 days are forensic listening, diagnostic mapping, and leadership alignment. No rogue disruption.</p>
+        <div class="space-y-2">
+          <span class="text-xs font-mono uppercase tracking-wider text-slate-500 font-bold">Work Style & Collaboration</span>
+          <p class="text-base font-bold text-slate-900">Embedded, Hands-On Operator (Zero Flight Risk)</p>
+          <p class="text-sm text-slate-600 leading-relaxed">First 30 days are forensic listening, diagnostic mapping, and leadership alignment. No rogue disruption.</p>
         </div>
-        <div>
-          <span>Core Advantage</span>
-          <p>Day 1 Deployable Frameworks</p>
-          <p>Eliminates 90-day onboarding lag by installing pre-built SOPs and governed AI workflows immediately.</p>
+        <div class="space-y-2">
+          <span class="text-xs font-mono uppercase tracking-wider text-slate-500 font-bold">Core Advantage</span>
+          <p class="text-base font-bold text-slate-900">Day 1 Deployable Frameworks</p>
+          <p class="text-sm text-slate-600 leading-relaxed">Eliminates 90-day onboarding lag by installing pre-built SOPs and governed AI workflows immediately.</p>
         </div>
       </div>
     </section>
 
-    
-    <section>
-      <div>
-        <span>Diagnostic Assessment</span>
-        <h2>Failure Modes I Eliminate</h2>
-        <p>Tap any card below to reveal the root cause, systemic fix, and standardized SOP.</p>
+    <!-- Section 03: Problems I Solve (Diagnostic) -->
+    <section id="diagnostic" class="space-y-5">
+      <div class="space-y-1">
+        <span class="text-xs sm:text-sm font-mono text-amber-800 uppercase font-bold tracking-wider">Diagnostic Assessment</span>
+        <h2 class="text-2xl sm:text-3xl font-bold text-slate-900">Failure Modes I Eliminate</h2>
+        <p class="text-sm text-slate-600 font-medium">Tap any card below to reveal the root cause, systemic fix, and standardized SOP.</p>
       </div>
 
-      <div>
-        <div>
-          <span>Failure 01</span>
-          <h3>Disconnected Marketing</h3>
-          <p>Organic reach isolated from pipeline velocity and discoverability.</p>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div onclick="selectDiagnostic(1)" id="diag-btn-1" class="diag-card cursor-pointer p-5 rounded-xl bg-white border-2 border-amber-600 shadow-sm transition-all hover:-translate-y-0.5">
+          <span class="text-xs font-mono text-amber-800 font-bold uppercase tracking-wider">Failure 01</span>
+          <h3 class="text-lg font-bold text-slate-900 mt-1">Disconnected Marketing</h3>
+          <p class="text-sm text-slate-600 mt-2 leading-relaxed">Organic reach isolated from pipeline velocity and discoverability.</p>
         </div>
-        <div>
-          <span>Failure 02</span>
-          <h3>Ungoverned AI Rework</h3>
-          <p>Unvetted drafts creating brand drift and factual/legal risk.</p>
+        <div onclick="selectDiagnostic(2)" id="diag-btn-2" class="diag-card cursor-pointer p-5 rounded-xl bg-white border border-slate-300 hover:border-slate-400 shadow-sm transition-all hover:-translate-y-0.5">
+          <span class="text-xs font-mono text-slate-500 font-bold uppercase tracking-wider">Failure 02</span>
+          <h3 class="text-lg font-bold text-slate-900 mt-1">Ungoverned AI Rework</h3>
+          <p class="text-sm text-slate-600 mt-2 leading-relaxed">Unvetted drafts creating brand drift and factual/legal risk.</p>
         </div>
-        <div>
-          <span>Failure 03</span>
-          <h3>Knowledge Fragility</h3>
-          <p>Critical execution trapped in individual heads (The Bus Factor).</p>
+        <div onclick="selectDiagnostic(3)" id="diag-btn-3" class="diag-card cursor-pointer p-5 rounded-xl bg-white border border-slate-300 hover:border-slate-400 shadow-sm transition-all hover:-translate-y-0.5">
+          <span class="text-xs font-mono text-slate-500 font-bold uppercase tracking-wider">Failure 03</span>
+          <h3 class="text-lg font-bold text-slate-900 mt-1">Knowledge Fragility</h3>
+          <p class="text-sm text-slate-600 mt-2 leading-relaxed">Critical execution trapped in individual heads (The Bus Factor).</p>
         </div>
       </div>
 
-      
-      <div>
-        
+      <!-- Result Window -->
+      <div id="diag-window" class="p-6 sm:p-7 rounded-2xl bg-white border-2 border-slate-300 shadow-md transition-all">
+        <!-- Content populated via JavaScript -->
       </div>
     </section>
 
-    
-    <section>
-      <div>
-        <span>Modular Playbooks</span>
-        <h2>Pre-Engineered Systems</h2>
-        <p>I bring two deployable architectures ready for Day 1 installation.</p>
+    <!-- Section 04: Deployable Systems & 6-Step Loop -->
+    <section id="playbooks" class="space-y-6">
+      <div class="space-y-1">
+        <span class="text-xs sm:text-sm font-mono text-amber-800 uppercase font-bold tracking-wider">Modular Playbooks</span>
+        <h2 class="text-2xl sm:text-3xl font-bold text-slate-900">Pre-Engineered Systems</h2>
+        <p class="text-sm text-slate-600">I bring two deployable architectures ready for Day 1 installation.</p>
       </div>
 
-      <div>
-        
-        <div>
-          <div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <!-- Ghost Town Audit -->
+        <div class="p-6 sm:p-7 rounded-2xl bg-white border border-slate-200 shadow-sm space-y-4">
+          <div class="flex justify-between items-start">
             <div>
-              <span>System 01</span>
-              <h3>The Ghost Town Audit</h3>
+              <span class="text-xs font-mono text-amber-800 font-bold uppercase tracking-wider">System 01</span>
+              <h3 class="text-xl font-bold text-slate-900">The Ghost Town Audit</h3>
             </div>
-            <span>30-Day Diagnostic</span>
+            <span class="text-xs font-mono font-bold px-2.5 py-1 rounded bg-slate-100 text-slate-700">30-Day Diagnostic</span>
           </div>
-          <p>
+          <p class="text-sm sm:text-base text-slate-600 leading-relaxed">
             A forensic review across internal and external corporate communications. It surfaces dormant digital assets, maps communication breakdowns, and identifies immediate pipeline leaks without disrupting the team.
           </p>
-          <a href="https://jpbimperial71675-cyber.github.io/jpimperial/ghost-town-audit" target="_blank" rel="noopener noreferrer">
-            Inspect Ghost Town Audit Asset <i></i>
+          <a href="https://jpbimperial71675-cyber.github.io/jpimperial/ghost-town-audit" target="_blank" rel="noopener noreferrer"
+             class="inline-flex items-center gap-1.5 text-sm font-bold text-amber-700 hover:text-amber-800">
+            Inspect Ghost Town Audit Asset <i data-feather="arrow-right" class="w-4 h-4"></i>
           </a>
         </div>
 
-        
-        <div>
-          <div>
+        <!-- Authority OS -->
+        <div class="p-6 sm:p-7 rounded-2xl bg-white border border-slate-200 shadow-sm space-y-4">
+          <div class="flex justify-between items-start">
             <div>
-              <span>System 02</span>
-              <h3>Authority OS</h3>
+              <span class="text-xs font-mono text-amber-800 font-bold uppercase tracking-wider">System 02</span>
+              <h3 class="text-xl font-bold text-slate-900">Authority OS</h3>
             </div>
-            <span>Distribution Engine</span>
+            <span class="text-xs font-mono font-bold px-2.5 py-1 rounded bg-slate-100 text-slate-700">Distribution Engine</span>
           </div>
-          <p>
+          <p class="text-sm sm:text-base text-slate-600 leading-relaxed">
             A turnkey content-to-pipeline infrastructure connecting short-form video pipelines directly to Google search discovery, lead capture, and CRM velocity.
           </p>
-          <a href="https://jpbimperial71675-cyber.github.io/jpimperial/" target="_blank" rel="noopener noreferrer">
-            Inspect Authority OS Architecture <i></i>
+          <a href="https://jpbimperial71675-cyber.github.io/jpimperial/" target="_blank" rel="noopener noreferrer"
+             class="inline-flex items-center gap-1.5 text-sm font-bold text-amber-700 hover:text-amber-800">
+            Inspect Authority OS Architecture <i data-feather="arrow-right" class="w-4 h-4"></i>
           </a>
         </div>
       </div>
 
-      
-      <div>
-        <div>
-          <h4>The 6-Step Operating Loop</h4>
-          <span>Tap stages to inspect</span>
+      <!-- 6-Step Loop -->
+      <div class="p-6 sm:p-7 rounded-2xl bg-white border border-slate-200 shadow-sm space-y-4">
+        <div class="flex items-center justify-between">
+          <h4 class="text-sm sm:text-base font-bold text-slate-900 uppercase font-mono tracking-wider">The 6-Step Operating Loop</h4>
+          <span class="text-xs sm:text-sm text-slate-500">Tap stages to inspect</span>
         </div>
-        <div>
-          
-          
-          
-          
-          
-          
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-2">
+          <button onclick="showLoopStep(1)" class="p-3 text-center rounded-xl bg-slate-100 hover:bg-amber-100 border border-slate-200 text-xs sm:text-sm font-bold font-mono transition-all">01 FIND</button>
+          <button onclick="showLoopStep(2)" class="p-3 text-center rounded-xl bg-slate-100 hover:bg-amber-100 border border-slate-200 text-xs sm:text-sm font-bold font-mono transition-all">02 CONNECT</button>
+          <button onclick="showLoopStep(3)" class="p-3 text-center rounded-xl bg-slate-100 hover:bg-amber-100 border border-slate-200 text-xs sm:text-sm font-bold font-mono transition-all">03 BUILD</button>
+          <button onclick="showLoopStep(4)" class="p-3 text-center rounded-xl bg-slate-100 hover:bg-amber-100 border border-slate-200 text-xs sm:text-sm font-bold font-mono transition-all">04 EXECUTE</button>
+          <button onclick="showLoopStep(5)" class="p-3 text-center rounded-xl bg-slate-100 hover:bg-amber-100 border border-slate-200 text-xs sm:text-sm font-bold font-mono transition-all">05 MEASURE</button>
+          <button onclick="showLoopStep(6)" class="p-3 text-center rounded-xl bg-slate-100 hover:bg-amber-100 border border-slate-200 text-xs sm:text-sm font-bold font-mono transition-all">06 DOCUMENT</button>
         </div>
-        <div>
+        <div id="loop-detail" class="p-4 rounded-xl bg-slate-50 border border-slate-200 text-sm text-slate-700 font-mono font-medium">
           01 FIND: Forensic audit of bottlenecks, dormant assets, and workflow drag.
         </div>
       </div>
     </section>
 
-    
-    <section>
-      <div>
-        <span>Risk Mitigation &amp; QA</span>
-        <h2>AI Governance Architecture</h2>
-        <p>I do not use AI for raw shortcuts. I engineer governed, persistent infrastructure.</p>
+    <!-- Section 05: AI Governance & Safety Layer -->
+    <section id="governance" class="p-6 sm:p-8 rounded-2xl bg-white border border-slate-200 shadow-sm space-y-6">
+      <div class="space-y-1">
+        <span class="text-xs sm:text-sm font-mono text-amber-800 uppercase font-bold tracking-wider">Risk Mitigation & QA</span>
+        <h2 class="text-2xl sm:text-3xl font-bold text-slate-900">AI Governance Architecture</h2>
+        <p class="text-sm text-slate-600">I do not use AI for raw shortcuts. I engineer governed, persistent infrastructure.</p>
       </div>
 
-      <div>
-        <div>
-          <div>L1</div>
-          <h4>System Prompts &amp; Rules</h4>
-          <p>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="p-5 sm:p-6 rounded-xl bg-slate-50 border border-slate-200 space-y-2">
+          <div class="w-8 h-8 rounded-lg bg-amber-100 text-amber-900 flex items-center justify-center font-mono font-bold text-xs">L1</div>
+          <h4 class="text-base font-bold text-slate-900">System Prompts & Rules</h4>
+          <p class="text-sm text-slate-600 leading-relaxed">
             Persistent system instructions in Claude and custom Gemini engines to enforce strict brand tone, voice anchors, and structure before generation starts.
           </p>
         </div>
-        <div>
-          <div>L2</div>
-          <h4>Evidentiary Anchors</h4>
-          <p>
+        <div class="p-5 sm:p-6 rounded-xl bg-slate-50 border border-slate-200 space-y-2">
+          <div class="w-8 h-8 rounded-lg bg-amber-100 text-amber-900 flex items-center justify-center font-mono font-bold text-xs">L2</div>
+          <h4 class="text-base font-bold text-slate-900">Evidentiary Anchors</h4>
+          <p class="text-sm text-slate-600 leading-relaxed">
             Anti-hallucination guardrails requiring every statistical claim to cite specific source passages. Unverified claims are flagged and discarded.
           </p>
         </div>
-        <div>
-          <div>L3</div>
-          <h4>Gemini Notebook RAG</h4>
-          <p>
+        <div class="p-5 sm:p-6 rounded-xl bg-slate-50 border border-slate-200 space-y-2">
+          <div class="w-8 h-8 rounded-lg bg-amber-100 text-amber-900 flex items-center justify-center font-mono font-bold text-xs">L3</div>
+          <h4 class="text-sm font-bold text-slate-900">Gemini Notebook RAG</h4>
+          <p class="text-sm text-slate-600 leading-relaxed">
             Structured knowledge indexing replacing scattered company drives. Protects institutional memory from the "bus factor."
           </p>
         </div>
       </div>
     </section>
 
-    
-    <section>
-      <div>
+    <!-- Section 06: Proof & Case Study (Vertical Bar Chart) -->
+    <section id="proof" class="p-6 sm:p-8 rounded-2xl bg-white border border-slate-200 shadow-sm space-y-8">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-slate-100 pb-4">
         <div>
-          <span>Track Record &amp; Case Study</span>
-          <h2>Production Velocity &amp; Resilience</h2>
+          <span class="text-xs sm:text-sm font-mono text-amber-800 uppercase font-bold tracking-wider">Track Record & Case Study</span>
+          <h2 class="text-2xl sm:text-3xl font-bold text-slate-900">Production Velocity & Resilience</h2>
         </div>
-        <div>
-          
-          
+        <div class="flex items-center gap-2">
+          <button onclick="toggleProofTab('macro')" id="btn-tab-macro" class="px-4 py-2 rounded-lg text-xs sm:text-sm font-bold bg-amber-700 text-white shadow-sm">Macro Outcomes</button>
+          <button onclick="toggleProofTab('signals')" id="btn-tab-signals" class="px-4 py-2 rounded-lg text-xs sm:text-sm font-bold bg-slate-100 text-slate-700 hover:bg-slate-200">Leading Signals</button>
         </div>
       </div>
 
-      
-      <div>
-        <div>
-          
-          <div>
-            <span>4 Deals</span>
-            <div></div>
-            <span>2022 Baseline</span>
+      <!-- Macro Outcomes: Vertical Bar Chart -->
+      <div id="view-macro" class="space-y-6">
+        <div class="h-64 sm:h-72 flex items-end justify-around gap-4 pt-8 border-b border-slate-200">
+          <!-- 2022 Baseline -->
+          <div class="flex flex-col items-center gap-2 w-1/4 h-full justify-end">
+            <span class="text-xs sm:text-sm font-mono font-bold text-slate-500">4 Deals</span>
+            <div class="w-full max-w-[80px] bg-slate-300 rounded-t-lg transition-all" style="height: 12%"></div>
+            <span class="text-xs sm:text-sm font-mono text-slate-600 mt-2 text-center font-bold">2022 Baseline</span>
           </div>
 
-          
-          <div>
-            <span>38 Deals (+850%)</span>
-            <div></div>
-            <span>2023 (1st ICON)</span>
+          <!-- 2023 Scale System -->
+          <div class="flex flex-col items-center gap-2 w-1/4 h-full justify-end">
+            <span class="text-xs sm:text-sm font-mono font-bold text-amber-800">38 Deals (+850%)</span>
+            <div class="w-full max-w-[80px] bg-amber-600 rounded-t-lg transition-all shadow-md shadow-amber-600/30" style="height: 100%"></div>
+            <span class="text-xs sm:text-sm font-mono font-extrabold text-slate-900 mt-2 text-center">2023 (1st ICON)</span>
           </div>
 
-          
-          <div>
-            <span>28 Deals</span>
-            <div></div>
-            <span>2024 (2nd ICON)</span>
+          <!-- 2024 Market Contraction -->
+          <div class="flex flex-col items-center gap-2 w-1/4 h-full justify-end">
+            <span class="text-xs sm:text-sm font-mono font-bold text-slate-700">28 Deals</span>
+            <div class="w-full max-w-[80px] bg-slate-700 rounded-t-lg transition-all" style="height: 74%"></div>
+            <span class="text-xs sm:text-sm font-mono font-extrabold text-slate-900 mt-2 text-center">2024 (2nd ICON)</span>
           </div>
         </div>
 
-        <p>
+        <p class="text-xs sm:text-sm text-slate-600 italic leading-relaxed">
           *Context:* Transparent data reporting. When the 2024 real estate market contracted, the documented distribution SOPs protected production, securing back-to-back national ICON Awards.
         </p>
       </div>
 
-      
-      <div>
-        <div>
-          <span>Organic LinkedIn Reach</span>
-          <p>512 → 5,595</p>
-          <span>+992% Growth</span>
+      <!-- Leading Signals View -->
+      <div id="view-signals" class="hidden grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div class="p-6 rounded-xl bg-slate-50 border border-slate-200">
+          <span class="text-xs font-mono font-bold text-slate-500 uppercase">Organic LinkedIn Reach</span>
+          <p class="text-3xl font-mono font-black text-slate-900 mt-2">512 → 5,595</p>
+          <span class="text-sm font-bold text-emerald-700 inline-block mt-1">+992% Growth</span>
         </div>
-        <div>
-          <span>Google Business Profile</span>
-          <p>3,398 Views</p>
-          <span>472 Direct Lead Inquiries</span>
+        <div class="p-6 rounded-xl bg-slate-50 border border-slate-200">
+          <span class="text-xs font-mono font-bold text-slate-500 uppercase">Google Business Profile</span>
+          <p class="text-3xl font-mono font-black text-slate-900 mt-2">3,398 Views</p>
+          <span class="text-sm font-bold text-amber-800 inline-block mt-1">472 Direct Lead Inquiries</span>
         </div>
       </div>
     </section>
 
-    
-    <section>
-      <div>
+    <!-- Section 07: Dual Career Spine -->
+    <section id="experience" class="space-y-6">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-slate-200 pb-4">
         <div>
-          <span>Career History</span>
-          <h2>Operational Experience</h2>
+          <span class="text-xs sm:text-sm font-mono text-amber-800 uppercase font-bold tracking-wider">Career History</span>
+          <h2 class="text-2xl sm:text-3xl font-bold text-slate-900">Operational Experience</h2>
         </div>
-        <a href="https://jpbimperial71675-cyber.github.io/B2B/assets/documents/jp-imperial-resume.pdf" target="_blank" rel="noopener noreferrer" download="">
-          <i></i>
+        <a href="https://jpbimperial71675-cyber.github.io/B2B/assets/documents/jp-imperial-resume.pdf" target="_blank" rel="noopener noreferrer" download
+           class="inline-flex items-center gap-2 px-4 py-2.5 rounded-lg bg-white border border-slate-300 hover:bg-slate-100 text-slate-900 text-xs sm:text-sm font-bold shadow-sm transition-all self-start sm:self-auto">
+          <i data-feather="file-text" class="w-4 h-4"></i>
           View Full Resume (PDF)
         </a>
       </div>
 
-      <div>
-        
-        <div>
-          <div>
+      <div class="space-y-4">
+        <!-- Rubicon X Media -->
+        <div class="p-6 sm:p-7 rounded-2xl bg-white border border-slate-200 shadow-sm space-y-3">
+          <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-1">
             <div>
-              <h3>Visibility Strategist</h3>
-              <p>Rubicon X Media</p>
+              <h3 class="text-lg font-bold text-slate-900">Visibility Strategist</h3>
+              <p class="text-sm font-bold text-amber-800">Rubicon X Media</p>
             </div>
-            <span>August 2020 – Present</span>
+            <span class="text-xs sm:text-sm font-mono font-semibold text-slate-500">August 2020 – Present</span>
           </div>
-          <ul>
+          <ul class="text-sm sm:text-base text-slate-600 space-y-2 list-disc pl-5 leading-relaxed">
             <li>Programmed persistent Claude system instructions and custom Gemini engines to automate brief creation, content mapping, and draft execution with strict quality control.</li>
             <li>Built the 6-step loop and centralized digital asset directories, reducing managerial overhead and boosting delivery speed by 35%.</li>
           </ul>
         </div>
 
-        
-        <div>
-          <div>
+        <!-- Alpine Legacy -->
+        <div class="p-6 sm:p-7 rounded-2xl bg-white border border-slate-200 shadow-sm space-y-3">
+          <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-1">
             <div>
-              <h3>Marketing Director</h3>
-              <p>Alpine Legacy / eXp Realty</p>
+              <h3 class="text-lg font-bold text-slate-900">Marketing Director</h3>
+              <p class="text-sm font-bold text-amber-800">Alpine Legacy / eXp Realty</p>
             </div>
-            <span>December 2022 – November 2025</span>
+            <span class="text-xs sm:text-sm font-mono font-semibold text-slate-500">December 2022 – November 2025</span>
           </div>
-          <ul>
+          <ul class="text-sm sm:text-base text-slate-600 space-y-2 list-disc pl-5 leading-relaxed">
             <li>Directed multi-channel distribution pipelines across short-form video and newsletters, connecting organic reach directly to local Google search discovery.</li>
             <li>Influenced 66 closed transactions across back-to-back award years (38 in Y1; 28 in Y2 during market contraction) to secure consecutive national ICON Awards.</li>
           </ul>
@@ -340,38 +371,41 @@
       </div>
     </section>
 
-    
-    <section>
-      <h2>Technical Infrastructure &amp; Remote Reliability</h2>
-      <div>
-        <div>
-          <h4>Hardware &amp; Redundancy</h4>
-          <p><strong>Hardware:</strong> Windows 11 · Intel Core i5-11400H · 16GB RAM</p>
-          <p><strong>Dual-Redundancy Connection:</strong> Primary High-Speed Fiber + Secondary DSL backup (Zero-downtime reliability).</p>
+    <!-- Section 08: Technical Infrastructure & Tool Stack -->
+    <section id="stack" class="p-6 sm:p-8 rounded-2xl bg-white border border-slate-200 shadow-sm space-y-6">
+      <h2 class="text-xl sm:text-2xl font-bold text-slate-900">Technical Infrastructure & Remote Reliability</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="space-y-3">
+          <h4 class="text-xs sm:text-sm font-mono uppercase text-slate-500 font-bold">Hardware & Redundancy</h4>
+          <p class="text-sm sm:text-base text-slate-700"><strong>Hardware:</strong> Windows 11 · Intel Core i5-11400H · 16GB RAM</p>
+          <p class="text-sm sm:text-base text-slate-700"><strong>Dual-Redundancy Connection:</strong> Primary High-Speed Fiber + Secondary DSL backup (Zero-downtime reliability).</p>
         </div>
-        <div>
-          <h4>Creative &amp; Workflow Stack</h4>
-          <p>Google Flow · Google AI Studio · Google Vids · Gemini Notebook · Claude · CapCut · Tailwind CSS · GitHub</p>
+        <div class="space-y-3">
+          <h4 class="text-xs sm:text-sm font-mono uppercase text-slate-500 font-bold">Creative & Workflow Stack</h4>
+          <p class="text-sm sm:text-base text-slate-700">Google Flow · Google AI Studio · Google Vids · Gemini Notebook · Claude · CapCut · Tailwind CSS · GitHub</p>
         </div>
       </div>
     </section>
 
-    
-    <section>
-      <div>
-        <h2>Ready to Eliminate Operational Friction?</h2>
-        <p>
+    <!-- Section 09: Next Steps & Direct Contact -->
+    <section id="contact" class="p-6 sm:p-8 rounded-2xl bg-slate-900 text-white space-y-6">
+      <div class="max-w-xl space-y-3">
+        <h2 class="text-2xl sm:text-3xl font-bold">Ready to Eliminate Operational Friction?</h2>
+        <p class="text-sm sm:text-base text-slate-300 leading-relaxed">
           Whether you need an embedded growth operator or want to review my playbooks for your team, let's connect.
         </p>
       </div>
-      <div>
-        <a href="https://calendly.com/joseph-paul-imperial/30min" target="_blank" rel="noopener noreferrer">
+      <div class="flex flex-wrap items-center gap-3 pt-2">
+        <a href="https://calendly.com/joseph-paul-imperial/30min" target="_blank" rel="noopener noreferrer"
+           class="px-5 py-3 rounded-lg bg-amber-600 hover:bg-amber-700 text-white text-sm font-bold transition-all shadow-sm">
           Schedule 30-Min Call
         </a>
-        <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=jpbimperial71675@gmail.com" target="_blank" rel="noopener noreferrer">
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=jpbimperial71675@gmail.com" target="_blank" rel="noopener noreferrer"
+           class="px-4 py-3 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 text-sm font-semibold transition-all">
           Open in Gmail
         </a>
-        <a href="about:invalid#zClosurez">
+        <a href="tel:+639178405877"
+           class="px-4 py-3 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 text-sm font-semibold transition-all">
           +63 917 840 5877
         </a>
       </div>
@@ -379,8 +413,108 @@
 
   </main>
 
-  <footer>
-    JP Imperial · B2B Growth Operations &amp; AI Governance · Built for institutional ownership.
+  <footer class="max-w-6xl mx-auto px-6 py-8 border-t border-slate-200 text-center text-xs sm:text-sm text-slate-500">
+    JP Imperial · B2B Growth Operations & AI Governance · Built for institutional ownership.
   </footer>
- 
-```
+
+  <script>
+    feather.replace();
+
+    const diagnostics = {
+      1: {
+        title: "Disconnected Marketing",
+        cause: "Publishing creative social content with zero bridge to search discoverability or CRM pipelines.",
+        fix: "Deploy Authority OS to synchronize short-form media with long-tail search indexing and automated lead routing.",
+        sop: "Multi-Channel Distribution Architecture v2.4"
+      },
+      2: {
+        title: "Ungoverned AI Rework",
+        cause: "Team generating raw AI drafts requiring heavy manual editing, causing factual inaccuracies and voice drift.",
+        fix: "Install persistent system instructions, custom prompt guardrails, and RAG knowledge verification.",
+        sop: "AI Governance & Evidentiary Verification Protocol"
+      },
+      3: {
+        title: "Knowledge Fragility",
+        cause: "Critical execution steps exist only in individual heads, creating a high-risk 'bus factor.'",
+        fix: "Standardize all workflows into centralized Gemini Notebook directories and reproducible playbooks.",
+        sop: "Institutional Knowledge Transfer & Directory Standards"
+      }
+    };
+
+    function selectDiagnostic(id) {
+      document.querySelectorAll('.diag-card').forEach((el, index) => {
+        if (index + 1 === id) {
+          el.classList.add('border-2', 'border-amber-600');
+          el.classList.remove('border-slate-300');
+        } else {
+          el.classList.remove('border-2', 'border-amber-600');
+          el.classList.add('border', 'border-slate-300');
+        }
+      });
+
+      const data = diagnostics[id];
+      const win = document.getElementById('diag-window');
+      win.innerHTML = `
+        <div class="space-y-4">
+          <div class="flex items-center justify-between border-b border-slate-200 pb-2">
+            <span class="text-xs sm:text-sm font-mono font-bold text-amber-800 uppercase tracking-wider">Active Inspection: ${data.title}</span>
+            <span class="text-xs font-mono font-semibold text-slate-500">Failure 0${id}</span>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-5 pt-1">
+            <div class="p-3 rounded-lg bg-slate-50 border border-slate-100">
+              <span class="text-xs font-mono uppercase text-slate-500 font-bold">Root Cause</span>
+              <p class="text-sm text-slate-800 font-medium mt-1 leading-relaxed">${data.cause}</p>
+            </div>
+            <div class="p-3 rounded-lg bg-slate-50 border border-slate-100">
+              <span class="text-xs font-mono uppercase text-slate-500 font-bold">Systemic Fix</span>
+              <p class="text-sm text-slate-800 font-medium mt-1 leading-relaxed">${data.fix}</p>
+            </div>
+            <div class="p-3 rounded-lg bg-amber-50/50 border border-amber-100">
+              <span class="text-xs font-mono uppercase text-amber-800 font-bold">Standardized SOP</span>
+              <p class="text-sm font-mono font-bold text-amber-900 mt-1">${data.sop}</p>
+            </div>
+          </div>
+        </div>
+      `;
+
+      if (window.innerWidth < 768) {
+        win.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      }
+    }
+
+    const loopSteps = {
+      1: "01 FIND: Forensic audit of bottlenecks, dormant assets, and workflow drag.",
+      2: "02 CONNECT: Map creative content directly to pipeline velocity and discoverability.",
+      3: "03 BUILD: Engineer governed prompt systems and automated distribution assets.",
+      4: "04 EXECUTE: High-volume, frictionless daily multi-channel publishing cadence.",
+      5: "05 MEASURE: Monitor conversion signals, search indexing, and lead velocity.",
+      6: "06 DOCUMENT: Package every success into a company-owned, repeatable SOP."
+    };
+
+    function showLoopStep(step) {
+      document.getElementById('loop-detail').innerText = loopSteps[step];
+    }
+
+    function toggleProofTab(tab) {
+      const macroView = document.getElementById('view-macro');
+      const signalsView = document.getElementById('view-signals');
+      const btnMacro = document.getElementById('btn-tab-macro');
+      const btnSignals = document.getElementById('btn-tab-signals');
+
+      if (tab === 'macro') {
+        macroView.classList.remove('hidden');
+        signalsView.classList.add('hidden');
+        btnMacro.className = "px-4 py-2 rounded-lg text-xs sm:text-sm font-bold bg-amber-700 text-white shadow-sm";
+        btnSignals.className = "px-4 py-2 rounded-lg text-xs sm:text-sm font-bold bg-slate-100 text-slate-700 hover:bg-slate-200";
+      } else {
+        macroView.classList.add('hidden');
+        signalsView.classList.remove('hidden');
+        btnMacro.className = "px-4 py-2 rounded-lg text-xs sm:text-sm font-bold bg-slate-100 text-slate-700 hover:bg-slate-200";
+        btnSignals.className = "px-4 py-2 rounded-lg text-xs sm:text-sm font-bold bg-amber-700 text-white shadow-sm";
+      }
+    }
+
+    selectDiagnostic(1);
+  </script>
+</body>
+</html>
